@@ -25,6 +25,8 @@ click==8.1.7
     # via typer
 cloudpathlib==0.20.0
     # via weasel
+colour==0.1.5
+    # via dtreeviz
 confection==0.1.5
     # via
     #   thinc
@@ -38,6 +40,10 @@ cymem==2.0.8
     #   preshed
     #   spacy
     #   thinc
+dtreeviz==2.2.2
+    # via -r requirements.in
+exceptiongroup==1.2.2
+    # via pytest
 fastai==2.7.18
     # via -r requirements.in
 fastcore==1.7.19
@@ -58,8 +64,12 @@ fonttools==4.54.1
     # via matplotlib
 fsspec==2024.10.0
     # via torch
+graphviz==0.20.3
+    # via dtreeviz
 idna==3.10
     # via requests
+iniconfig==2.0.0
+    # via pytest
 jinja2==3.1.4
     # via
     #   spacy
@@ -85,6 +95,7 @@ markupsafe==3.0.2
 matplotlib==3.9.2
     # via
     #   -r requirements.in
+    #   dtreeviz
     #   fastai
 mdurl==0.1.2
     # via markdown-it-py
@@ -101,6 +112,7 @@ numpy==2.0.2
     # via
     #   blis
     #   contourpy
+    #   dtreeviz
     #   matplotlib
     #   pandas
     #   scikit-learn
@@ -146,18 +158,22 @@ packaging==24.2
     #   fastcore
     #   kagglehub
     #   matplotlib
+    #   pytest
     #   spacy
     #   thinc
     #   weasel
 pandas==2.2.3
     # via
     #   -r requirements.in
+    #   dtreeviz
     #   fastai
 pillow==11.0.0
     # via
     #   fastai
     #   matplotlib
     #   torchvision
+pluggy==1.5.0
+    # via pytest
 preshed==3.0.9
     # via
     #   spacy
@@ -174,6 +190,8 @@ pygments==2.18.0
     # via rich
 pyparsing==3.2.0
     # via matplotlib
+pytest==8.3.3
+    # via dtreeviz
 python-dateutil==2.9.0.post0
     # via
     #   kaggle
@@ -195,7 +213,9 @@ requests==2.32.3
 rich==13.9.4
     # via typer
 scikit-learn==1.5.2
-    # via fastai
+    # via
+    #   dtreeviz
+    #   fastai
 scipy==1.14.1
     # via
     #   fastai
@@ -228,6 +248,8 @@ thinc==8.3.2
     # via spacy
 threadpoolctl==3.5.0
     # via scikit-learn
+tomli==2.1.0
+    # via pytest
 torch==2.5.1
     # via
     #   -r requirements.in
